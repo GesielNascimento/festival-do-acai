@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/festival-do-acai/static/css/main.c88314aa.css",
-    "main.js": "/festival-do-acai/static/js/main.1a484627.js",
+    "main.js": "/festival-do-acai/static/js/main.e83b6c38.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/festival-do-acai/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/festival-do-acai/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/festival-do-acai/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -9,10 +9,10 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/festival-do-acai/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/festival-do-acai/index.html",
     "main.c88314aa.css.map": "/festival-do-acai/static/css/main.c88314aa.css.map",
-    "main.1a484627.js.map": "/festival-do-acai/static/js/main.1a484627.js.map"
+    "main.e83b6c38.js.map": "/festival-do-acai/static/js/main.e83b6c38.js.map"
   },
   "entrypoints": [
     "static/css/main.c88314aa.css",
-    "static/js/main.1a484627.js"
+    "static/js/main.e83b6c38.js"
   ]
 }
