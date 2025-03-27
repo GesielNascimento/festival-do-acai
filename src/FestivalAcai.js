@@ -7,7 +7,8 @@ const FestivalAcai = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="container">
-          <img src="/logofest.png" alt="Logo do Festival do Açaí" className="logofest" /> <h1 className="nomeigreja"> Assembleia de Deus em Afuá</h1>
+        <img src={`${process.env.PUBLIC_URL}/logofest.png`} alt="Logo do Festival do Açaí" className="logofest" /><h1 className="nomeigreja">Assembleia de Deus em Afuá</h1>
+
           <button className="navbar-toggler">
             
           </button>
@@ -32,17 +33,17 @@ const FestivalAcai = () => {
         <h2 className="prog">Programação</h2>
         <div className="cards-container">
             <div className="card">
-            <img src="/acai.jpeg" alt="Gastronomia" />
+            <img src={process.env.PUBLIC_URL + "/acai.jpeg"} alt="Gastronomia" />
             <h3>Gastronomia</h3>
             <p>Sabores únicos com pratos especiais à base de açaí e culinária local.</p>
             </div>
             <div className="card">
-            <img src="/musica.jpg" alt="Música" />
+            <img src={`${process.env.PUBLIC_URL}/musica.jpg`} alt="Música" />
             <h3>Música</h3>
             <p>Música ao vivo com artistas da terra e convidados especiais.</p>
             </div>
             <div className="card">
-            <img src="/afua.jpeg" alt="Cultura" />
+            <img src={`${process.env.PUBLIC_URL}/afua.jpeg`} alt="Cultura" />
             <h3>Cultura</h3>
             <p>A Cultura Afuaense presente no Festival do Açaí.</p>
             </div>
@@ -77,7 +78,7 @@ const FestivalAcai = () => {
                 <a href="https://www.instagram.com/adafua_oficial/" className="social-btn instagram"><i className="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/ad.afua.940" className="social-btn facebook"><i className="fab fa-facebook-f"></i></a>
                 <a href="#" className="social-btn whatsapp"><i className="fab fa-whatsapp"></i></a>
-                <a href="https://www.youtube.com/watch?v=zXCtvypnIB4" className="social-btn youtube"><i className="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com/watch?v=zXCtvypnIB4npm" className="social-btn youtube"><i className="fab fa-youtube"></i></a>
             </div>
         </section>
 
