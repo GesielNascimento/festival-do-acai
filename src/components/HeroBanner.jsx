@@ -1,6 +1,6 @@
 function HeroBanner() {
     return (
-      <section className="relative h-[90vh] overflow-hidden">
+      <section className="relative h-[70vh] overflow-hidden">
         
         {/* IMAGEM DE FUNDO COM MOVIMENTO SUAVE */}
         <div className="absolute inset-0">
@@ -15,10 +15,10 @@ function HeroBanner() {
   
         {/* CONTEÚDO CENTRALIZADO */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold shadow-md">
+          <h1 className="text-4xl md:text-5xl font-extrabold shadow-md">
             O Festival mais esperado de Afuá!
           </h1>
-          <p className="mt-4 text-lg md:text-2xl max-w-2xl">
+          <p className="mt-4 text-lg md:text-1xl max-w-2xl">
             Vem viver essa experiência incrível de fé, cultura e sabor na nossa linda cidade de Afuá! 🍇✨
           </p>
   
