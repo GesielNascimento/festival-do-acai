@@ -1,38 +1,34 @@
 function HeroBanner() {
-    return (
-      <section className="relative h-[70vh] overflow-hidden">
-        
-        {/* IMAGEM DE FUNDO COM MOVIMENTO SUAVE */}
-        <div className="absolute inset-0">
-          <img
-            src="/bg-hero.jpg" // ajuste aqui conforme onde salvou sua imagem
-            alt="Festival do Açaí"
-            className="w-full h-full object-cover scale-110 animate-slow-zoom"
-          />
-          {/* SOBREPOSIÇÃO ESCURA */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-  
-        {/* CONTEÚDO CENTRALIZADO */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold shadow-md">
-            O Festival mais esperado de Afuá!
-          </h1>
-          <p className="mt-4 text-lg md:text-1xl max-w-2xl">
-            Vem viver essa experiência incrível de fé, cultura e sabor na nossa linda cidade de Afuá! 🍇✨
-          </p>
-  
-          {/* BOTÃO COM ANIMAÇÃO */}
-          <a
-            href="#programacao"
-            className="mt-6 bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-700 hover:text-white transform hover:scale-110 transition-all duration-300 animate-bounce-slow"
-          >
-            Ver Programação
-          </a>
-        </div>
-      </section>
-    )
-  }
-  
-  export default HeroBanner;
-  
+  return (
+    <section className="w-full overflow-hidden relative pt-[80px]">
+  <div className="relative w-full">
+    <img
+      src="/bg-hero.jpg"
+      alt="Festival do Açaí"
+      className="w-full h-auto block"
+    />
+
+    <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+
+    <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white p-4 z-10 animate-float">
+      <h1 className="text-3xl md:text-5xl font-extrabold shadow-md">
+        O Festival mais esperado de Afuá!
+      </h1>
+      <p className="mt-2 text-lg md:text-xl max-w-2xl">
+        Vem viver essa experiência incrível de fé, cultura e sabor na nossa linda cidade de Afuá! 🍇✨
+      </p>
+
+      <a
+        href="#programacao"
+        className="mt-4 bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-purple-700 hover:text-white transform hover:scale-110 transition-all duration-300"
+      >
+        Ver Programação
+      </a>
+    </div>
+  </div>
+</section>
+
+  )
+}
+
+export default HeroBanner;
