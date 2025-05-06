@@ -38,7 +38,7 @@ function HeroBanner() {
       </div>
 
 {/* VERSÃO PARA MOBILE */}
-<div className="block md:hidden relative h-[520px]">
+<div className="block md:hidden relative h-[420px]">
   {/* Imagem de fundo com zoom */}
   <img
     src="/bg-hero.jpg"
