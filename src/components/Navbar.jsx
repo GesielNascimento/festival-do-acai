@@ -19,7 +19,7 @@ function Navbar() {
           <img
             src="/logo.png" // Coloque o caminho correto da sua logo aqui
             alt="Logo do Festival do Açaí"
-            className="w-12 h-12 ml-8" // Ajuste o tamanho da logo conforme necessário
+            className="w-12 h-12 ml-0" // Ajuste o tamanho da logo conforme necessário
           />
           <div className="text-2xl font-bold">Festival do Açaí</div>
         </div>
