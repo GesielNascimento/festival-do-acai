@@ -5,7 +5,6 @@ import AboutSection from "./components/AboutSection";
 import Highlights from "./components/Highlights";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
-import Corrida from "./pages/Corrida"; // ✅ novo
 
 function App() {
   return (
@@ -17,20 +16,59 @@ function App() {
           element={
             <>
               <HeroBanner />
-              {/* 🔽 Seção de Destaque da Corrida */}
-              <section className="bg-purple-800 text-white mt-10 py-10 px-4 text-center rounded-lg shadow-md mx-4">
-                <h2 className="text-4xl font-bold mb-3">🏃‍♀️ 1ª Corrida do Festival do Açaí</h2>
-                <p className="mb-6 text-lg">
-                  Acontece no sábado do Festival. Inscreva-se agora e garanta sua vaga!
-                </p>
-                <a
-                  href="/corrida"
-                  className="inline-block bg-white text-purple-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-100 transition"
-                >
-                  👉 Ir para inscrição
-                </a>
+
+              {/* 🔽 FORMULÁRIO DE INSCRIÇÃO DA CORRIDA NA HOME */}
+              <section className="bg-white py-10 px-4 text-center">
+                <div className="max-w-3xl mx-auto">
+                  <h2 className="text-4xl font-bold text-purple-800 mb-4">
+                    🏃‍♀️ 1ª Corrida do Festival do Açaí
+                  </h2>
+
+                  <p className="text-lg text-gray-700 mb-6">
+                    A corrida acontece no sábado do Festival! Preencha o formulário e pague <strong>R$ 50,00</strong> para garantir sua participação.
+                  </p>
+
+                  {/* Imagem opcional (banner da corrida) */}
+                  <img
+                    src="/images/banner-corrida.png"
+                    alt="Banner da Corrida"
+                    className="mx-auto mb-6 rounded-xl shadow-md"
+                  />
+
+                  {/* Formulário Google Forms */}
+                  <div className="mb-8 border-2 border-purple-200 rounded-lg overflow-hidden shadow-md">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSeAerjHS07rPGczkl0HIU5dQ-AtKjJmHdLCZCcEHmPAm5tu6Q/viewform?embedded=true"
+                      width="100%"
+                      height="1471"
+                      frameBorder="0"
+                      marginHeight="0"
+                      marginWidth="0"
+                      title="Formulário de Inscrição Corrida"
+                    >
+                      Carregando…
+                    </iframe>
+                  </div>
+
+                  {/* Botão de pagamento */}
+                  <a
+                    href="https://mpago.la/1YZj5Br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-purple-800 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-purple-900 transition"
+                  >
+                    💳 Pagar Inscrição (R$ 50,00)
+                  </a>
+
+                  {/* Aviso importante */}
+                  <p className="text-sm text-gray-600 mt-6">
+                    ⚠️ Atenção: sua inscrição só será <strong>confirmada após o pagamento</strong>. 
+                    Preencher o formulário <strong>não garante a vaga</strong>.
+                  </p>
+                </div>
               </section>
 
+              {/* Continua a página normalmente */}
               <Sponsors />
               <AboutSection />
               <Highlights />
@@ -38,7 +76,6 @@ function App() {
             </>
           }
         />
-        <Route path="/corrida" element={<Corrida />} />
       </Routes>
     </Router>
   );
