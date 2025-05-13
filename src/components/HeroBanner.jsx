@@ -38,7 +38,7 @@ function HeroBanner() {
       </div>
 
 {/* VERSÃO PARA MOBILE */}
-<div className="block md:hidden relative h-[420px]">
+<div className="block md:hidden relative h-[480px]">
   {/* Imagem de fundo com zoom */}
   <img
     src="/bg-hero.jpg"
@@ -49,17 +49,19 @@ function HeroBanner() {
 
   {/* Conteúdo centralizado */}
   <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4">
-    {/* Imagens lado a lado */}
-    <div className="flex items-center justify-center gap-6 mb-4">
-      <img src="/mascote.png" alt="Mascote" className="w-24 animate-float" />
-      <img src="/logo.png" alt="Logo" className="w-24 animate-float" />
+    
+    {/* Mascote + Logo centralizados */}
+    <div className="flex items-center justify-center gap-4 mb-4">
+      <img src="/mascote.png" alt="Mascote" className="w-20 animate-float" />
+      <img src="/logo.png" alt="Logo Festival" className="w-20 animate-float" />
     </div>
 
-    {/* Textos */}
-    <h1 className="text-lg font-bold mb-2">Festival de Afuá!</h1>
+    {/* Título e texto */}
+    <h1 className="text-xl font-extrabold mb-2 leading-tight">
+      O Festival mais esperado de Afuá!
+    </h1>
     <p className="text-sm leading-snug max-w-xs mb-4">
-      Vem viver essa experiência incrível de fé, <br />
-      cultura e sabor na nossa linda cidade de Afuá! 🍇✨
+      Vem viver essa experiência incrível de fé, cultura e sabor na nossa linda cidade de Afuá! 🍇✨
     </p>
 
     {/* Botão */}
@@ -71,6 +73,7 @@ function HeroBanner() {
     </a>
   </div>
 </div>
+
 
 
 
