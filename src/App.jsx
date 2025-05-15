@@ -94,16 +94,21 @@ function App() {
                       📍 Regulamento Oficial – 1ª Corrida do Festival do Açaí
                     </h3>
                     <ol className="text-sm text-gray-800 space-y-2 list-decimal list-inside text-left">
-                      <li>A corrida será realizada no sábado, com largada e chegada na Praça da Bíblia.</li>
-                      <li>A inscrição custa R$ 50,00, feita pelo site e pago via Mercado Pago.</li>
-                      <li>Participantes a partir de 14 anos. Menores precisam de autorização dos responsáveis.</li>
-                      <li>Duas categorias: Masculino e Feminino. Todos receberão número de peito.</li>
-                      <li>Premiação simbólica para os 3 primeiros colocados de cada categoria.</li>
-                      <li>É obrigatório o uso de vestimenta adequada e seguir as normas de segurança.</li>
-                      <li>A organização pode adiar ou cancelar por motivos de força maior.</li>
-                      <li>A inscrição só é válida após o preenchimento do formulário e confirmação do pagamento.</li>
-                      <li>O participante declara estar apto fisicamente e assume responsabilidade.</li>
-                      <li>Casos omissos serão resolvidos pela equipe organizadora do Festival do Açaí.</li>
+                      <li>O evento será realizado no sábado, durante o Festival do Açaí, com largada na Praça da Bíblia, pontualmente às 07h00.</li>
+                      <li>O percurso total será de aproximadamente 5 km em vias urbanas da cidade, previamente sinalizadas e com pontos de apoio.</li>
+                      <li>As categorias serão divididas em: Masculino (a partir de 14 anos) e Feminino (a partir de 14 anos). Menores devem apresentar autorização assinada pelos pais/responsáveis.</li>
+                      <li>O valor da inscrição é de R$ 50,00, a ser pago via link Mercado Pago após preenchimento do formulário online.</li>
+                      <li>O kit do atleta será composto por número de peito e medalha de participação para todos os concluintes.</li>
+                      <li>Premiação: troféus para os 3 primeiros colocados de cada categoria. Os resultados serão divulgados imediatamente após a conclusão da prova.</li>
+                      <li>É de responsabilidade do participante estar em boas condições de saúde. A organização não se responsabiliza por acidentes causados por imprudência do atleta.</li>
+                      <li>É obrigatório o uso do número de peito visível durante todo o percurso. Atletas sem identificação poderão ser desclassificados.</li>
+                      <li>Será disponibilizado ponto de hidratação no percurso e assistência de primeiros socorros na largada e chegada.</li>
+                      <li>Casos de emergência serão encaminhados ao hospital municipal. Um termo de responsabilidade deverá ser aceito no ato da inscrição.</li>
+                      <li>Não será permitido o acompanhamento de ciclistas ou veículos particulares junto aos corredores durante a prova.</li>
+                      <li>Não haverá devolução da taxa de inscrição em caso de desistência ou ausência do atleta no dia da corrida.</li>
+                      <li>A organização poderá alterar o percurso ou a data da corrida por motivos climáticos, de segurança pública ou força maior.</li>
+                      <li>O evento visa promover a saúde, o esporte e a integração entre os participantes e o público do Festival do Açaí.</li>
+                      <li>Ao se inscrever, o atleta concorda com todas as cláusulas deste regulamento, que poderá sofrer ajustes até a data do evento.</li>
                     </ol>
                     <p className="mt-4 text-xs text-gray-500 text-right">
                       Organização: Assembleia de Deus – Festival do Açaí – Afuá/PA
