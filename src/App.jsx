@@ -35,7 +35,9 @@ function App() {
                     🏃‍♀️ 1ª Corrida do Festival do Açaí
                   </h2>
 
-                  <Countdown targetDate="2025-07-05T07:00:00" />
+                  <RaceSponsors  />
+
+                  <Countdown  targetDate="2025-07-05T07:00:00" />
 
                   <p className="text-lg text-gray-700 mb-4">
                     A corrida acontece no sábado do Festival! Preencha o formulário abaixo e pague <strong>R$ 50,00</strong> para garantir sua participação.
@@ -94,7 +96,7 @@ function App() {
                 </div>
               </section>
 
-              <RaceSponsors />
+              
 
 
               {/* Conteúdo adicional do site */}

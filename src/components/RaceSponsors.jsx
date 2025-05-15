@@ -6,7 +6,8 @@ function RaceSponsors() {
     ];
   
     return (
-      <section className="bg-purple-50 py-12">
+      <section className="bg-purple-50 py-12 mb-8">
+
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h3 className="text-3xl font-extrabold text-purple-800 mb-8">
             Patrocinadores Exclusivos da Corrida
