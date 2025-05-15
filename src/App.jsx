@@ -18,17 +18,17 @@ function App() {
               <HeroBanner />
 
               {/* 🔽 FORMULÁRIO DE INSCRIÇÃO DA CORRIDA NA HOME */}
-              <section className="bg-white py-10 px-4 text-center">
+              <section className="bg-white py-12 px-4 text-center" id="corrida">
                 <div className="max-w-3xl mx-auto">
                   <h2 className="text-4xl font-bold text-purple-800 mb-4">
                     🏃‍♀️ 1ª Corrida do Festival do Açaí
                   </h2>
 
                   <p className="text-lg text-gray-700 mb-6">
-                    A corrida acontece no sábado do Festival! Preencha o formulário e pague <strong>R$ 50,00</strong> para garantir sua participação.
+                    A corrida acontece no sábado do Festival! Preencha o formulário abaixo e pague <strong>R$ 50,00</strong> para garantir sua participação.
                   </p>
 
-                  {/* Imagem opcional (banner da corrida) */}
+                  {/* Banner ilustrativo da corrida */}
                   <img
                     src="/images/banner-corrida.png"
                     alt="Banner da Corrida"
@@ -40,7 +40,7 @@ function App() {
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLSeAerjHS07rPGczkl0HIU5dQ-AtKjJmHdLCZCcEHmPAm5tu6Q/viewform?embedded=true"
                       width="100%"
-                      height="1471"
+                      height="1410"
                       frameBorder="0"
                       marginHeight="0"
                       marginWidth="0"
@@ -50,7 +50,7 @@ function App() {
                     </iframe>
                   </div>
 
-                  {/* Botão de pagamento */}
+                  {/* Botão de pagamento externo */}
                   <a
                     href="https://mpago.la/1YZj5Br"
                     target="_blank"
@@ -61,9 +61,8 @@ function App() {
                   </a>
 
                   {/* Aviso importante */}
-                  <p className="text-sm text-gray-600 mt-6">
-                    ⚠️ Atenção: sua inscrição só será <strong>confirmada após o pagamento</strong>. 
-                    Preencher o formulário <strong>não garante a vaga</strong>.
+                  <p className="text-sm text-gray-600 mt-6 max-w-md mx-auto">
+                    ⚠️ <strong>Atenção:</strong> sua inscrição só será <strong>confirmada após o pagamento</strong>. Preencher o formulário <strong>não garante a vaga</strong>. Conclua o pagamento clicando no botão acima.
                   </p>
                 </div>
               </section>
