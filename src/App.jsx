@@ -27,9 +27,19 @@ function App() {
                     🏃‍♀️ 1ª Corrida do Festival do Açaí
                   </h2>
 
-                  <p className="text-lg text-gray-700 mb-6">
+                  <p className="text-lg text-gray-700 mb-4">
                     A corrida acontece no sábado do Festival! Preencha o formulário abaixo e pague <strong>R$ 50,00</strong> para garantir sua participação.
                   </p>
+
+                  {/* Botão de Ler Regulamento */}
+                  <div className="mb-6">
+                    <button
+                      onClick={() => setShowRegulamento(true)}
+                      className="inline-flex items-center gap-2 text-purple-700 border border-purple-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 hover:text-white transition"
+                    >
+                      📖 Ler Regulamento
+                    </button>
+                  </div>
 
                   {/* Banner ilustrativo da corrida */}
                   <img
@@ -39,11 +49,11 @@ function App() {
                   />
 
                   {/* Formulário Google Forms */}
-                  <div className="mb-4 border-2 border-purple-200 rounded-lg overflow-hidden shadow-md">
+                  <div className="mb-10 border-2 border-purple-200 rounded-lg overflow-hidden shadow-md">
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLSeAerjHS07rPGczkl0HIU5dQ-AtKjJmHdLCZCcEHmPAm5tu6Q/viewform?embedded=true"
                       width="100%"
-                      height="1250"
+                      height="1450"
                       frameBorder="0"
                       marginHeight="0"
                       marginWidth="0"
@@ -52,14 +62,6 @@ function App() {
                       Carregando…
                     </iframe>
                   </div>
-
-                  {/* Botão para ler o regulamento */}
-                  <button
-                    onClick={() => setShowRegulamento(true)}
-                    className="mt-2 mb-8 text-sm text-purple-700 underline hover:text-purple-900 transition"
-                  >
-                    📖 Ler Regulamento
-                  </button>
 
                   {/* Botão de pagamento externo */}
                   <a
@@ -89,39 +91,19 @@ function App() {
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4">
                   <div className="bg-white p-6 rounded-lg max-w-2xl w-full relative shadow-xl overflow-y-auto max-h-[90vh]">
                     <h3 className="text-xl font-bold mb-4 text-purple-800">
-                      📝 Regulamento Oficial – 1ª Corrida do Festival do Açaí
+                      📍 Regulamento Oficial – 1ª Corrida do Festival do Açaí
                     </h3>
                     <ol className="text-sm text-gray-800 space-y-2 list-decimal list-inside text-left">
-                      <li>
-                        A corrida será realizada no sábado, durante a programação do Festival do Açaí, com largada e chegada na Praça da Bíblia.
-                      </li>
-                      <li>
-                        A inscrição custa R$ 50,00 e deve ser realizada antecipadamente através do formulário oficial no site e pagamento via link do Mercado Pago.
-                      </li>
-                      <li>
-                        Poderão participar pessoas a partir de 14 anos. Menores de idade devem apresentar autorização dos responsáveis.
-                      </li>
-                      <li>
-                        Haverá duas categorias: Masculino e Feminino. Todos os participantes receberão número de peito.
-                      </li>
-                      <li>
-                        Os 3 primeiros colocados de cada categoria receberão premiação simbólica e medalha de honra.
-                      </li>
-                      <li>
-                        É obrigatório o uso de vestimenta adequada e o respeito às normas de segurança durante todo o percurso.
-                      </li>
-                      <li>
-                        A organização se reserva ao direito de adiar ou cancelar o evento por motivos de força maior (clima, segurança pública etc).
-                      </li>
-                      <li>
-                        A inscrição só será considerada válida após o preenchimento completo do formulário e confirmação do pagamento.
-                      </li>
-                      <li>
-                        Ao se inscrever, o participante declara estar em boas condições físicas e assume total responsabilidade por sua participação.
-                      </li>
-                      <li>
-                        Casos omissos serão resolvidos pela equipe organizadora do Festival do Açaí.
-                      </li>
+                      <li>A corrida será realizada no sábado, com largada e chegada na Praça da Bíblia.</li>
+                      <li>A inscrição custa R$ 50,00, feita pelo site e pago via Mercado Pago.</li>
+                      <li>Participantes a partir de 14 anos. Menores precisam de autorização dos responsáveis.</li>
+                      <li>Duas categorias: Masculino e Feminino. Todos receberão número de peito.</li>
+                      <li>Premiação simbólica para os 3 primeiros colocados de cada categoria.</li>
+                      <li>É obrigatório o uso de vestimenta adequada e seguir as normas de segurança.</li>
+                      <li>A organização pode adiar ou cancelar por motivos de força maior.</li>
+                      <li>A inscrição só é válida após o preenchimento do formulário e confirmação do pagamento.</li>
+                      <li>O participante declara estar apto fisicamente e assume responsabilidade.</li>
+                      <li>Casos omissos serão resolvidos pela equipe organizadora do Festival do Açaí.</li>
                     </ol>
                     <p className="mt-4 text-xs text-gray-500 text-right">
                       Organização: Assembleia de Deus – Festival do Açaí – Afuá/PA
