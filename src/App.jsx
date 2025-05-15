@@ -6,6 +6,13 @@ import AboutSection from "./components/AboutSection";
 import Highlights from "./components/Highlights";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
+import TopNotice from "./components/TopNotice";
+import Countdown from "./components/Countdown";
+import RaceSponsors from "./components/RaceSponsors";
+import Loja from "./components/Loja";
+import Patrocinador from "./components/Patrocinador";
+
+
 
 function App() {
   const [showRegulamento, setShowRegulamento] = useState(false);
@@ -13,6 +20,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <TopNotice />
       <Routes>
         <Route
           path="/"
@@ -27,28 +35,36 @@ function App() {
                     🏃‍♀️ 1ª Corrida do Festival do Açaí
                   </h2>
 
+                  <Countdown targetDate="2025-07-05T07:00:00" />
+
                   <p className="text-lg text-gray-700 mb-4">
                     A corrida acontece no sábado do Festival! Preencha o formulário abaixo e pague <strong>R$ 50,00</strong> para garantir sua participação.
                   </p>
 
-                  {/* Botão de Ler Regulamento */}
-                  <div className="mb-6">
+                  {/* Botões: Ler Regulamento e Baixar PDF */}
+                  <div className="flex flex-col md:flex-row justify-center gap-4 mb-6">
                     <button
                       onClick={() => setShowRegulamento(true)}
-                      className="inline-flex items-center gap-2 text-purple-700 border border-purple-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 hover:text-white transition"
+                      className="inline-flex items-center gap-2 text-white bg-purple-700 px-6 py-3 rounded-full text-sm font-semibold hover:bg-purple-800 transition shadow-md"
                     >
                       📖 Ler Regulamento
                     </button>
+
+                    <a
+                      href="/Regulamento_Corrida_Festival_Acai_2025.pdf"
+                      download
+                      className="inline-flex items-center gap-2 text-purple-700 border border-purple-700 px-6 py-3 rounded-full text-sm font-semibold hover:bg-purple-700 hover:text-white transition shadow-md"
+                    >
+                      ⬇️ Baixar Regulamento (PDF)
+                    </a>
                   </div>
 
-                  {/* Banner ilustrativo da corrida */}
                   <img
                     src="/images/banner-corrida.png"
                     alt="Banner da Corrida"
                     className="mx-auto mb-6 rounded-xl shadow-md"
                   />
 
-                  {/* Formulário Google Forms */}
                   <div className="mb-10 border-2 border-purple-200 rounded-lg overflow-hidden shadow-md">
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLSeAerjHS07rPGczkl0HIU5dQ-AtKjJmHdLCZCcEHmPAm5tu6Q/viewform?embedded=true"
@@ -63,7 +79,6 @@ function App() {
                     </iframe>
                   </div>
 
-                  {/* Botão de pagamento externo */}
                   <a
                     href="https://mpago.la/1YZj5Br"
                     target="_blank"
@@ -73,17 +88,23 @@ function App() {
                     💳 Pagar Inscrição (R$ 50,00)
                   </a>
 
-                  {/* Aviso importante */}
                   <p className="text-sm text-gray-600 mt-6 max-w-md mx-auto">
                     ⚠️ <strong>Atenção:</strong> sua inscrição só será <strong>confirmada após o pagamento</strong>. Preencher o formulário <strong>não garante a vaga</strong>. Conclua o pagamento clicando no botão acima.
                   </p>
                 </div>
               </section>
 
+              <RaceSponsors />
+
+
               {/* Conteúdo adicional do site */}
+
               <Sponsors />
+              <Loja />
+              <Patrocinador />
               <AboutSection />
               <Highlights />
+              
               <Footer />
 
               {/* ✅ MODAL DO REGULAMENTO */}

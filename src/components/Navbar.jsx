@@ -42,10 +42,10 @@ function Navbar() {
         {/* Links (Desktop) */}
         <ul className="hidden md:flex gap-6 text-lg">
           <li><a href="/" className="hover:text-purple-300 transition">Home</a></li>
-          <li><a href="#historia" className="hover:text-purple-300 transition">História</a></li>
           <li><a href="#programacao" className="hover:text-purple-300 transition">Programação</a></li>
-          <li><a href="#galeria" className="hover:text-purple-300 transition">Galeria</a></li>
-          <li><a href="#contato" className="hover:text-purple-300 transition">Contato</a></li>
+          <li><a href="#loja" className="hover:text-purple-300 transition">Loja</a></li>
+          <li><a href="#patrocinador" className="hover:text-purple-300 transition">Seja um Patrocinador</a></li>
+
         </ul>
 
         {/* Menu Mobile */}
@@ -55,10 +55,10 @@ function Navbar() {
           } md:hidden`}
         >
           <a href="/" className="hover:text-purple-300 transition">Home</a>
-          <a href="#historia" className="hover:text-purple-300 transition">História</a>
           <a href="#programacao" className="hover:text-purple-300 transition">Programação</a>
-          <a href="#galeria" className="hover:text-purple-300 transition">Galeria</a>
-          <a href="#contato" className="hover:text-purple-300 transition">Contato</a>
+          <li><a href="#loja" className="hover:text-purple-300 transition">Loja</a></li>
+          <li><a href="#patrocinador" className="hover:text-purple-300 transition">Seja um Patrocinador</a></li>
+
         </div>
       </nav>
     </>

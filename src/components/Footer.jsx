@@ -15,22 +15,21 @@ function Footer() {
         <div className="flex space-x-6 mb-4 md:mb-0">
           <a href="#home" className="hover:text-purple-300 transition">Home</a>
           <a href="#programacao" className="hover:text-purple-300 transition">Programação</a>
-          <a href="#galeria" className="hover:text-purple-300 transition">Galeria</a>
+          <a href="#loja" className="hover:text-purple-300 transition">Loja</a>
+          <a href="#patrocinador" className="hover:text-purple-300 transition">Seja um Patrocinador</a>
           <a href="#contato" className="hover:text-purple-300 transition">Contato</a>
+
         </div>
         
         {/* Redes sociais */}
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
+          <a href="https://www.facebook.com/ad.afua.940" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
             <FaFacebookF className="w-6 h-6" />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
+          <a href="https://www.instagram.com/adafua_oficial/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
             <FaInstagram className="w-6 h-6" />
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
-            <FaTwitter className="w-6 h-6" />
-          </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
+          <a href="https://www.youtube.com/watch?v=zXCtvypnIB4" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition">
             <FaYoutube className="w-6 h-6" />
           </a>
         </div>
