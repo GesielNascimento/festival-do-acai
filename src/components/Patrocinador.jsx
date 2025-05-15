@@ -11,7 +11,7 @@ function Patrocinador() {
           </p>
   
           <a
-            href="https://wa.me/5591999999999?text=Olá!%20Tenho%20interesse%20em%20patrocinar%20o%20Festival%20do%20Açaí!"
+            href="https://wa.me/5596991627364?text=Olá!%20Tenho%20interesse%20em%20patrocinar%20o%20Festival%20do%20Açaí!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-green-700 transition"

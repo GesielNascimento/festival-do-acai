@@ -97,13 +97,13 @@ function App() {
               </section>
 
               
+              <Loja />
+              <Patrocinador />
 
 
               {/* Conteúdo adicional do site */}
 
               <Sponsors />
-              <Loja />
-              <Patrocinador />
               <AboutSection />
               <Highlights />
               
