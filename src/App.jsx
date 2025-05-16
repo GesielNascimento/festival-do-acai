@@ -29,7 +29,8 @@ function App() {
               <HeroBanner />
 
               {/* 🔽 FORMULÁRIO DE INSCRIÇÃO DA CORRIDA NA HOME */}
-              <section className="bg-white py-12 px-4 text-center" id="corrida">
+              <section className="bg-white mt-[-90px] pt-6 pb-10 px-4 text-center" id="corrida">
+
                 <div className="max-w-3xl mx-auto">
                   <h2 className="text-4xl font-bold text-purple-800 mb-4">
                     🏃‍♀️ 1ª Corrida do Festival do Açaí

@@ -1,43 +1,30 @@
+import { useEffect, useState } from "react";
+
 function HeroBanner() {
+  const images = ["/bg-hero.png", "/bg-hero2.png", "/bg-hero3.png"];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="w-full overflow-hidden relative">
+    <section className="w-full overflow-hidden relative mt-0">
+      
+      {/* DESKTOP - Carrossel */}
+      <div className="hidden md:block relative h-[600px] -mt-[82px]">
 
-      {/* VERSÃO PARA PC */}
-      <div className="hidden md:block relative">
         <img
-          src="/bg-hero.jpg"
+          src={images[index]}
           alt="Fundo Festival do Açaí"
-          className="w-full h-auto block animate-slow-zoom"
+          className="w-full h-[600px] object-contain transition-opacity duration-1000 ease-in-out mx-auto"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-
-        <img
-          src="/mascote.png"
-          alt="Mascote"
-          className="absolute bottom-4 left-10 w-56 z-20 animate-float drop-shadow-lg"
-        />
-        <img
-          src="/logo.png"
-          alt="Logo Festival"
-          className="absolute top-[30%] -translate-y-1/2 right-16 w-48 z-20 animate-float drop-shadow-lg"
-        />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white px-4 z-20">
-          <h1 className="text-5xl font-extrabold leading-tight max-w-[90%] mb-4 shadow-black drop-shadow-lg">
-            O Festival mais esperado de Afuá!
-          </h1>
-          <p className="text-xl max-w-2xl leading-snug drop-shadow-sm">
-            Vem viver essa experiência incrível de fé, cultura e sabor na nossa linda cidade de Afuá! 🍇✨
-          </p>
-          <a
-            href="#programacao"
-            className="mt-3 bg-white text-purple-700 font-semibold px-5 py-2 rounded-full shadow-lg hover:bg-purple-700 hover:text-white transform hover:scale-110 transition-all duration-300"
-          >
-            Ver Programação
-          </a>
-        </div>
       </div>
 
-      {/* VERSÃO PARA MOBILE */}
+      {/* MOBILE - Imagem única */}
       <div className="block md:hidden relative h-[480px]">
         <img
           src="/bg-hero.jpg"
@@ -67,7 +54,6 @@ function HeroBanner() {
           </a>
         </div>
       </div>
-
     </section>
   );
 }
