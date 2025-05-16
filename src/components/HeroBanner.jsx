@@ -27,7 +27,7 @@ function HeroBanner() {
       {/* MOBILE - Imagem única */}
       <div className="block md:hidden relative h-[480px]">
         <img
-          src="/bg-hero.jpg"
+          src="/bg-hero(2).png"
           alt="Fundo Festival do Açaí"
           className="absolute inset-0 w-full h-full object-cover scale-110"
         />
