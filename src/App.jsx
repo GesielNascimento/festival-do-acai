@@ -11,6 +11,7 @@ import Countdown from "./components/Countdown";
 import RaceSponsors from "./components/RaceSponsors";
 import Loja from "./components/Loja";
 import Patrocinador from "./components/Patrocinador";
+import AfuaTour from "./components/AfuaTour";
 
 
 
@@ -100,6 +101,7 @@ function App() {
               
               <Loja />
               <Patrocinador />
+              <AfuaTour />
 
 
               {/* Conteúdo adicional do site */}
