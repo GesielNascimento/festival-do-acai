@@ -7,7 +7,8 @@ export default function AfuaTour() {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <img src="/logo-afua-tour.JPG" alt="Afuá Tour" className="mx-auto w-40 md:w-52 mb-4" />
-          <h2 className="text-3xl font-bold text-green-800 mb-2">Conheça Afuá com a Afuá Tour</h2>
+          <h2 className="text-3xl font-bold text-green-800 mb-2">Quer viver o Festival do Açaí, mas não sabe como chegar em Afuá?<br />
+          A Afuá Tour cuida de tudo pra você!</h2>
           <p className="text-base md:text-lg max-w-2xl mx-auto">
             Uma experiência completa para você curtir o Festival do Açaí com tranquilidade! A Afuá Tour cuida do seu transporte, hospedagem,
             alimentação e ainda oferece passeios inesquecíveis por nossa cidade encantadora.
