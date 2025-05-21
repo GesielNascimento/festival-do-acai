@@ -101,7 +101,7 @@ function App() {
               
               <Loja />
               <Patrocinador />
-              <AfuaTour />
+              {/*<AfuaTour />*/}
 
 
               {/* Conteúdo adicional do site */}
